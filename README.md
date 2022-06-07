@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Example: Draw Polygon
 
 This app reproduces Mapbox's [Draw a polygon and calculate its area](https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-draw/) example.
@@ -11,6 +10,3 @@ To run this example, you need a [Mapbox token](http://visgl.github.io/react-map-
 npm i
 npm run start
 ```
-=======
-
->>>>>>> 5def577b476598faa7d7d2b296936c9669a60106

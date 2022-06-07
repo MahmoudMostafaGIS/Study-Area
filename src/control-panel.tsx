@@ -16,7 +16,6 @@ function ControlPanel(props) {
           square meters
         </p>
       )}
-
     </div>
   );
 }

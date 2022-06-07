@@ -1,9 +1,8 @@
 import * as React from 'react';
 import {useState, useCallback} from 'react';
 import {createRoot} from 'react-dom/client';
-import Map, {
-    NavigationControl,
-} from 'react-map-gl';
+import Map,{NavigationControl} from 'react-map-gl';
+
 import DrawControl from './draw-control';
 import ControlPanel from './control-panel';
 
@@ -38,16 +37,15 @@ export default function App() {
         initialViewState={{
           longitude: -91.874,
           latitude: 42.76,
-          zoom: 12,
+          zoom: 12
         }}
         mapStyle="mapbox://styles/mapbox/satellite-v9"
         mapboxAccessToken='pk.eyJ1IjoibWFobW91ZG1vc3RhZmEiLCJhIjoiY2p1MnV2aGszMGdpbTN6cDhlbTI3NGJzcyJ9.jHD9nS8XYnMjmDBMiQnyNQ'
-
       >
-          <NavigationControl position="top-right" />
+          <NavigationControl position="top-left" />
 
           <DrawControl
-          position="top-left"
+          position="top-right"
           displayControlsDefault={false}
           controls={{
             polygon: true,
@@ -58,7 +56,6 @@ export default function App() {
           onUpdate={onUpdate}
           onDelete={onDelete}
         />
-
       </Map>
       <ControlPanel polygons={Object.values(features)} />
     </>

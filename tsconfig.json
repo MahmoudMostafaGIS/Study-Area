@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "compilerOptions": {
     "target": "es2020",
@@ -8,4 +9,16 @@
     "module": "ES2020",
     "sourceMap": true
   }
+=======
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "module": "ES2020",
+    "sourceMap": true
+  }
+>>>>>>> 5def577b476598faa7d7d2b296936c9669a60106
 }
